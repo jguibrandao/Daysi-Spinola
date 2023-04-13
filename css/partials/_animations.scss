@@ -1,0 +1,61 @@
+.logo{
+  animation: logo 4s ease infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes logo {
+  0%{
+    stroke-width: 0;
+    stroke-dasharray: 0 400;
+    stroke-opacity: 1;
+    stroke: #fff;
+  }
+  50%{
+    stroke-width: 1;
+    stroke-dasharray: 200 200;
+    stroke-opacity: 1;
+  }
+  75%{
+    stroke-width: 2;
+    stroke-dasharray: 300 300;
+    stroke-opacity: 1;
+  }
+  100%{
+    stroke-width: 3;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+    stroke: #fff;
+  }
+}
+
+.symbol-move-small{
+  animation: symbol-move 8s ease 4s infinite alternate-reverse
+}
+.symbol-move-normal{
+  animation: symbol-move-2 6s ease 3s infinite alternate-reverse
+}
+.symbol-move-biggest{
+  animation: symbol-move 4s ease 1s infinite alternate-reverse
+}
+
+@keyframes symbol-move {
+  0%{
+    transform: translate3d(0, 0, 0);
+    transform: rotate(0);
+  }
+  100%{
+    transform: translate3d(12px, 5px, 0);
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes symbol-move-2 {
+  0%{
+    transform: translate3d(0, 0, 0);
+    transform: rotate(0);
+  }
+  100%{
+    transform: translate3d(12px, 5px, 0);
+    transform: rotate(10deg);
+  }
+}
