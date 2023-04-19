@@ -291,6 +291,18 @@
   cursor: pointer;
 }
 
+.container-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.container-medias img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
 footer {
   background: linear-gradient(90.27deg, #3A201C 6.6%, #94564D 99.6%);
   z-index: -2;
@@ -973,7 +985,7 @@ header {
 }
 
 .logo {
-  animation: logo 4s ease infinite alternate;
+  animation: logo 3s ease infinite alternate;
   cursor: pointer;
 }
 
@@ -1002,15 +1014,15 @@ header {
   }
 }
 .symbol-move-small {
-  animation: symbol-move 8s ease 4s infinite alternate-reverse;
+  animation: symbol-move 6s ease 43 infinite alternate-reverse;
 }
 
 .symbol-move-normal {
-  animation: symbol-move-2 6s ease 3s infinite alternate-reverse;
+  animation: symbol-move-2 4s ease 2s infinite alternate-reverse;
 }
 
 .symbol-move-biggest {
-  animation: symbol-move 4s ease 1s infinite alternate-reverse;
+  animation: symbol-move 4s ease 0s infinite alternate-reverse;
 }
 
 @keyframes symbol-move {

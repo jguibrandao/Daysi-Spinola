@@ -1,5 +1,5 @@
 .logo{
-  animation: logo 4s ease infinite alternate;
+  animation: logo 3s ease infinite alternate;
   cursor: pointer;
 }
 
@@ -29,13 +29,13 @@
 }
 
 .symbol-move-small{
-  animation: symbol-move 8s ease 4s infinite alternate-reverse
+  animation: symbol-move 6s ease 43 infinite alternate-reverse
 }
 .symbol-move-normal{
-  animation: symbol-move-2 6s ease 3s infinite alternate-reverse
+  animation: symbol-move-2 4s ease 2s infinite alternate-reverse
 }
 .symbol-move-biggest{
-  animation: symbol-move 4s ease 1s infinite alternate-reverse
+  animation: symbol-move 4s ease 0s infinite alternate-reverse
 }
 
 @keyframes symbol-move {
