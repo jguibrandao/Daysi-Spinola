@@ -1,22 +1,52 @@
-.swiper{
+.swiper {
   width: 520px;
   height: 745px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include responsive(l) {
+    width: 388px;
+    height: 582px;
+  }
+
+  @include responsive(m) {
+    width: 388px;
+    height: 582px;
+  }
+
+  @include responsive(s) {
+    width: 388px;
+    height: 582px;
+  }
 }
 
-.swiper2{
+.swiper2 {
   width: 520px;
   height: 745px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include responsive(l) {
+    width: 388px;
+    height: 582px;
+  }
+
+  @include responsive(m) {
+    width: 388px;
+    height: 582px;
+  }
+
+  @include responsive(s) {
+    width: 388px;
+    height: 582px;
+  }
 }
 
-.button-next{
+.button-next {
   width: 36px;
   height: 36px;
   cursor: pointer;
@@ -25,7 +55,7 @@
   background-position: center center;
 }
 
-.button-prev{
+.button-prev {
   width: 36px;
   height: 36px;
   cursor: pointer;
@@ -35,13 +65,37 @@
   transform: rotate(180deg);
 }
 
-.swiper-slide{
+.swiper-slide {
   max-width: 650px;
   padding: 24px 36px;
   margin: 0px 16px;
 
-  img{
+  img {
     width: 497px;
     height: 745px;
+  }
+
+  @include responsive(l) {
+
+    img {
+      width: 388px;
+      height: 582px;
+    }
+  }
+
+  @include responsive(m) {
+
+    img {
+      width: 388px;
+      height: 582px;
+    }
+  }
+
+  @include responsive(s) {
+
+    img {
+      width: 388px;
+      height: 582px;
+    }
   }
 }
