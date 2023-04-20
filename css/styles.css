@@ -121,7 +121,9 @@
 
 /*----------------------------- HERO ---------------------------*/
 .section1-half1 {
-  background-color: #F4D0B9;
+  background-image: url("../../assets/img/img-backd-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 845px;
   display: flex;
   flex-direction: column;
@@ -578,13 +580,17 @@
 }
 
 footer {
-  background: linear-gradient(90.27deg, #3A201C 6.6%, #94564D 99.6%);
+  background-image: url("../../assets/img/img-backd-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -2;
   position: relative;
 }
-footer .footer {
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 960px) {
+  footer .footer {
+    display: flex;
+    justify-content: center;
+  }
 }
 footer section {
   padding-bottom: 0 !important;
