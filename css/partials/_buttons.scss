@@ -15,7 +15,7 @@
 
 .link-button{
   display: inline-block;
-  color: $primary-dark;
+  color: $white-dark;
   background-image: url('../../assets/svg/arrow.svg');
   background-repeat: no-repeat;
   background-position: 10% 50%;
@@ -24,12 +24,12 @@
   position: relative;
   cursor: pointer;
   font-family: 'Source Serif Pro', sans-serif;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
   text-decoration: none;
 
   &:hover{
     opacity: 0.9;
-    transform: scale(1.03);
+    transform: scale(1.1);
   }
 
   @include responsive(xs) {
@@ -58,7 +58,7 @@
 
   padding: 12px 36px;
 
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 
   box-shadow: 0px 17px 17px rgba(80, 196, 80, 0.13),
   0px 5.125px 5.125px rgba(80, 196, 80, 0.085),
@@ -70,7 +70,7 @@
       0px 5.125px 5.125px rgba(80, 196, 80, 0.085),
       0px 2.12866px 2.12866px rgba(103, 196, 80, 0.065),
       0px 0.769896px 0.769896px rgba(80, 196, 138, 0.045);
-    transform: scale(1.03);
+    transform: scale(1.1);
     opacity: 0.9;
   }
 

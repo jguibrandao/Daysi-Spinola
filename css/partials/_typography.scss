@@ -102,6 +102,7 @@ h5 {
 
 p {
   color: $gray-2;
+  line-height: 30px !important;
   @include typeface-2(p2, desktop);
   @include responsive(s) {
     @include typeface-2(p2, mobile);

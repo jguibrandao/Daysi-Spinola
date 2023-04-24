@@ -166,17 +166,22 @@ $container-smalls: 585px;
   overflow: hidden;
 }
 
+.white {
+  color: $white-normal !important;
+}
+
 main{
   @include responsive(xs) {
     padding-top: 0 !important;
   }
 }
 
+.bckd-white{
+  background-color: $white-normal;
+}
+
 /*----------------------------- HERO ---------------------------*/
 .section1-half1 {
-  background-image: url('../../assets/img/img-backd-hero.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 845px;
 
   display: flex;
@@ -185,6 +190,7 @@ main{
   align-items: start;
   max-width: $container-xl;
   padding: 0 100px;
+  width: 100%;
 
   @include responsive(m) {
     padding: 0 80px;
@@ -228,6 +234,10 @@ main{
 }
 
 .hero-section {
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.30);
+
   @include responsive(xs) {
      flex-direction: column-reverse;
   }
@@ -277,6 +287,19 @@ main{
 
 /*----------------------------- SECTION2 - SOBRE MIM ---------------------------*/
 
+.sobre-container{
+  background-color: $white-normal;
+  position: relative;
+  width: 100%;
+}
+
+.content-sobremim{
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+  align-items: flex-start;
+}
+
 .section2-container {
   position: relative;
 
@@ -303,6 +326,8 @@ main{
 .section2-sobre-img {
   width: 377px;
   height: 602px;
+  z-index: 2;
+  position: relative;
 
   @include responsive(s) {
     width: 252px;
@@ -313,7 +338,7 @@ main{
 .backd-section2 {
   background-color: $primary-normal;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   top: -30px;
   left: -30px;
   width: 377px;
@@ -353,6 +378,9 @@ main{
 }
 
 .section3-container3 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
   @include responsive(s) {
     display: flex;
     flex-direction: column;
@@ -367,6 +395,9 @@ main{
 }
 
 .section3-container4{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
   @include responsive(s) {
     display: flex;
     flex-direction: column-reverse;
@@ -389,6 +420,9 @@ main{
 
 .section3-container1 {
   max-height: 180px;
+  align-items: flex-start;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 
   @include responsive(m) {
     max-height: 250px;
@@ -627,9 +661,10 @@ main{
 }
 
 footer {
-  background-image: url('../../assets/img/img-backd-footer.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url('../../assets/img/img-backd-footer.png');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: rgba(0, 0, 0, 0.30);
   z-index: -2;
   position: relative;
 
