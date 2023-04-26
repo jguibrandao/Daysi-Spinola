@@ -171,6 +171,8 @@ $container-smalls: 585px;
 }
 
 main{
+  background-color: rgba(0, 0, 0, 0.45);
+
   @include responsive(xs) {
     padding-top: 0 !important;
   }
@@ -191,6 +193,7 @@ main{
   max-width: $container-xl;
   padding: 0 100px;
   width: 100%;
+  justify-content: center;
 
   @include responsive(m) {
     padding: 0 80px;
@@ -235,25 +238,22 @@ main{
 
 .hero-section {
   width: 100%;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.30);
+  position: relative;  
 
   @include responsive(xs) {
-     flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  @include responsive(m) {
+    flex-direction: column-reverse;
+  }
+  @include responsive(s) {
+    flex-direction: column-reverse;
   }
 }
 
 .img-section1 {
   width: 466px;
   height: 651px;
-  margin-right: -4rem;
-  top: 100px;
-  left: -100px;
-  position: absolute;
-  border-top: 7px solid $primary-normal;
-  border-right: 7px solid $primary-normal;
-  border-bottom: 7px solid $primary-normal;
-  padding: 40px;
 
   @include responsive(m) {
     height: 529px;
@@ -267,21 +267,14 @@ main{
   }
 
   @include responsive(xs) {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
     height: 392px;
     width: 281px;
-    left: 0;
-    position: relative;
   }
 
   @include responsive(smalls) {
     padding: 0;
     height: 392px;
     width: 281px;
-    top: 0;
-    margin-right: 0;
   }
 }
 
@@ -324,15 +317,10 @@ main{
 }
 
 .section2-sobre-img {
-  width: 377px;
-  height: 602px;
+  width: 100%;
+  height: 100%;
   z-index: 2;
   position: relative;
-
-  @include responsive(s) {
-    width: 252px;
-    height: 402px;
-  }
 }
 
 .backd-section2 {
@@ -352,13 +340,26 @@ main{
   }
 }
 
+.section3-container1-h2 {
+  @include responsive(s) {
+    margin-top: 60px;
+    margin-bottom: 30px !important;
+  }
+}
+
+.section3-container2-h5 {
+  @include responsive(s) {
+    margin-top: 75px;
+  }
+}
+
 .section3-container2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start !important;
   align-items: flex-start;
 
-  ul{
+  ul {
     @include responsive(s) {
       flex-wrap: wrap;
     }
@@ -584,11 +585,9 @@ main{
 
 .container-footer-2 {
   position: relative;
-  border-top: 5px solid #fff;
-  border-right: 5px solid #fff;
 
   img {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-right: 20px;
     z-index: 3;
     width: 338px;
@@ -664,7 +663,7 @@ footer {
   // background-image: url('../../assets/img/img-backd-footer.png');
   // background-repeat: no-repeat;
   // background-size: cover;
-  background-color: rgba(0, 0, 0, 0.30);
+  background-color: rgba(0, 0, 0, 0.35);
   z-index: -2;
   position: relative;
 
