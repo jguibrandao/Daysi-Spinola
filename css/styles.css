@@ -131,8 +131,12 @@ main {
 }
 
 /*----------------------------- HERO ---------------------------*/
+.section1 {
+  padding: 0 24px;
+  padding-top: 6vh;
+}
+
 .section1-half1 {
-  height: 845px;
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -160,8 +164,14 @@ main {
   }
 }
 @media screen and (max-width: 585px) {
+  .section1 {
+    padding: 0 24px;
+    padding-top: 2vh;
+  }
+
   .section1-half1 {
     padding: 20px 30px;
+    text-align: center;
   }
 }
 
@@ -173,6 +183,7 @@ main {
   height: 845px;
   position: relative;
 }
+
 @media screen and (max-width: 960px) {
   .section1-half2 {
     height: 690px;
@@ -211,8 +222,10 @@ main {
 
 .img-section1 {
   width: 466px;
-  height: 651px;
+  height: 690px;
+  box-shadow: rgba(252, 252, 252, 0.2) 0px 7px 29px 0px;
 }
+
 @media screen and (max-width: 1140px) and (min-width: 960px) {
   .img-section1 {
     height: 529px;
@@ -235,8 +248,9 @@ main {
 @media screen and (max-width: 585px) {
   .img-section1 {
     padding: 0;
-    height: 392px;
+    height: 400px;
     width: 281px;
+    border-radius: 4px;
   }
 }
 
@@ -283,6 +297,7 @@ main {
   height: 100%;
   z-index: 2;
   position: relative;
+  box-shadow: rgba(88, 67, 39, 0.2) 0px 7px 29px 0px;
 }
 
 .backd-section2 {
@@ -454,6 +469,7 @@ main {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   height: 300px;
+  box-shadow: rgba(252, 252, 252, 0.2) 0px 7px 29px 0px;
 }
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
   .card {
@@ -507,6 +523,12 @@ main {
 }
 
 /*----------------------------- FOOTER ---------------------------*/
+
+.footer {
+  padding-left: 2vw;
+
+}
+
 .container-img-footer {
   position: relative;
 }
@@ -548,12 +570,12 @@ main {
   position: relative;
 }
 .container-footer-2 img {
-  margin-top: 40px;
   margin-right: 20px;
   z-index: 3;
   width: 338px;
-  height: 406px;
+  height: 600px;
 }
+
 @media screen and (max-width: 960px) {
   .container-footer-2 {
     display: none;
@@ -1361,6 +1383,7 @@ header {
 .swiper-slide img {
   width: 497px;
   height: 745px;
+  box-shadow: rgba(252, 252, 252, 0.2) 0px 7px 29px 0px;
 }
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
   .swiper-slide img {
@@ -1378,6 +1401,10 @@ header {
   .swiper-slide img {
     width: 388px;
     height: 582px;
+  }
+  
+  .title {
+    margin-left: 10vw;
   }
 }
 
